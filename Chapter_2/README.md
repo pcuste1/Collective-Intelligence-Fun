@@ -1,33 +1,33 @@
-# Chapter Overview 
+### Chapter Overview 
 This chapter covers two straight forward distance metrics that will be used throughout the rest of the book, Euclidian and Pearson. It also goes indepth into various filtering methods that are applied to a dataset of movie reviews.
 
-# Code Usage
->> import recommendations 
+### Code Usage
+*import recommendations 
 
->> recommendations.sim_distance(dataset, A, B) 
+* ``recommendations.sim_distance(dataset, A, B)``
 \#Calculatse the euclidian distance between A and B in the dataset
 
->> recommendations.sim_pearson(dataset, A, B)
+* ``recommendations.sim_pearson(dataset, A, B)``
 \#Calculates the pearson distance between A and B in the dataset
 
->> recommendations.topMatches(dataset, A, n=3)
+* ``recommendations.topMatches(dataset, A, n=3)``
 \#Returns the top n items in the dataset similar to A
 
->> recommendations.getRecommendations(dataset, A, similarity=[optional])
+* ``recommendations.getRecommendations(dataset, A, similarity=[optional])``
 \#Returns similar items to A that are not in A but are in the dataset. 
 \#Interesting to use multiple similarity functions and see how they determine 
 \#different best fits
   
->> recommendations.transformPrefs(dataset)
+* ``recommendations.transformPrefs(dataset)``
 \#Switches the row's and col's. Can generate interesting results 
 
->> recommendaitons.calculateSimilarItems(dataset)
+* ``recommendaitons.calculateSimilarItems(dataset)``
 \#Returns an new itemset of similar items to each item. Takes awhile but does 
 \#not need to be done often.
 
->> recommendations.getRecommendedItems(dataset, itemset, A)
+* ``recommendations.getRecommendedItems(dataset, itemset, A)``
 \#Returns recommended items for A based off of the itemset. 
 
->> recommendations.loadMovieLens()
+* ``recommendations.loadMovieLens()``
 \#Helper function for reading in the MovieLens dataset'
 
