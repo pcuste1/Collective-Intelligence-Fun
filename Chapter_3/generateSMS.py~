@@ -1,0 +1,18 @@
+def getwordcounts(filename):
+    text = open(filename, "r"):
+    
+    wc = {}
+
+    for line in text:
+        line = line.strip().split()
+        if line[0] == "spam": 
+            s = 0
+        else: 
+            s = 1
+
+        for word in line[1:]:
+            word = word.
+            wc.setdefault(word, [0,0]) 
+            wc[word][s] += 1
+            
+    return wc
