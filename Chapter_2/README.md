@@ -5,7 +5,7 @@ This chapter covers two straight forward distance metrics that will be used thro
 *import recommendations 
 
 * ``sim_distance(dataset, A, B)``
-Calculatse the euclidian distance between A and B in the dataset
+Calculate the euclidian distance between A and B in the dataset
 
 * ``sim_pearson(dataset, A, B)``
 Calculates the pearson distance between A and B in the dataset
